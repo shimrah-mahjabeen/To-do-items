@@ -4,7 +4,7 @@ class User < ApplicationRecord
 
   has_many :tasks, dependent: :destroy
 
-  validates :email, presence: true, format: { with: URI::MailTo::EMAIL_REGEXP, message: 'is not a valid email address' }
+  validates :email, presence: true, format: { with: URI::MailTo::EMAIL_REGEXP, message: 'is not a valid email address' }, uniqueness: { case_sensitive: false }
   validates :password, presence: true
   validates :name, presence: true
 end

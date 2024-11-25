@@ -42,7 +42,7 @@ class GraphqlController < ApplicationController
   end
 
   def set_cors_headers
-    headers['Access-Control-Allow-Origin'] = 'http://localhost:5173'
+    headers['Access-Control-Allow-Origin'] = 'http://test-project-sjnks.s3-website-us-east-1.amazonaws.com'
     headers['Access-Control-Allow-Methods'] = 'GET, POST, PUT, PATCH, DELETE, OPTIONS'
     headers['Access-Control-Allow-Headers'] = 'Origin, Content-Type, Accept, Authorization'
     headers['Access-Control-Allow-Credentials'] = 'true'
