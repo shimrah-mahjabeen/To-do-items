@@ -19,6 +19,7 @@ gem 'ransack'
 gem 'devise'
 gem 'jwt'
 gem 'kaminari'
+gem 'dotenv-rails'
 
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 # gem "jbuilder"
